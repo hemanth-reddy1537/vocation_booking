@@ -1,0 +1,157 @@
+nav div{
+    text-align: center;
+    background: linear-gradient(45deg,pink,orange,blue,black);
+}
+.pic 
+{
+ position: relative;
+ width:530px;
+ height: 300px;
+}
+.pic .pic1-1{
+   position: absolute;
+    top:0;
+    left:0;
+    background-color: aqua;
+}
+
+/* Packages Page Specific Styles */
+.card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #2d3436;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #636e72;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Package Features List */
+.list-unstyled {
+    margin-bottom: 1.5rem;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #2d3436;
+}
+
+.list-unstyled i {
+    margin-right: 0.5rem;
+    color: #00b894;
+}
+
+/* Package Price Tag */
+.price-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #6c5ce7;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Book Now Button */
+.btn-primary {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border-radius: 2rem;
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5b4cc4;
+    border-color: #5b4cc4;
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
+    
+    .card-title {
+        font-size: 1.3rem;
+    }
+    
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animation for Cards */
+.card {
+    animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered Animation Delay for Cards */
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+.card:nth-child(5) { animation-delay: 0.5s; }
+.card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c5ce7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5b4cc4;
+}

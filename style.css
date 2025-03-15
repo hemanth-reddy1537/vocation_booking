@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(./assests/background_image.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(35deg, rgb(109, 98, 195), rgb(68, 175, 70));
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Home Section Styles */
+.home {
+    flex: 1;
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home h1 {
+    color: #6c5ce7;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 1.2rem;
+    color: #2d3436;
+    margin-bottom: 2rem;
+}
+
+.home .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    color: white;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home {
+        margin: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1rem;
+    }
+}
+
+/* Animation Classes */
+.animate__animated {
+    animation-duration: 0.8s;
+}
+
+/* Card Hover Effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5b4cc4;
+    border-color: #5b4cc4;
+    transform: translateY(-2px);
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-2px);
+}
